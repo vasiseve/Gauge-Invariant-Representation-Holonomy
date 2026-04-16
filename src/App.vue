@@ -4,6 +4,7 @@ import { computed, ref } from 'vue'
 const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 const paperPdf = asset('gauge-invariant-representation-holonomy.pdf')
 const codeRepo = 'https://github.com/vasiseve/gauge-invariant-representation-holonomy-code'
+const personalSite = 'https://vasiseve.github.io/'
 
 const activeResult = ref('radius')
 
@@ -158,6 +159,7 @@ const faqs = [
         <div class="actions" aria-label="Primary links">
           <a class="button primary" :href="paperPdf" target="_blank" rel="noreferrer">Read the PDF</a>
           <a class="button" :href="codeRepo" target="_blank" rel="noreferrer">Code</a>
+          <a class="button" :href="personalSite" target="_blank" rel="noreferrer">Author site</a>
           <a class="button" href="#estimator">See the estimator</a>
         </div>
       </header>
@@ -350,6 +352,11 @@ const faqs = [
           transport is path-independent, and whether small loops accumulate a
           geometric twist. Representation holonomy measures that twist in a
           principled, gauge-invariant way.
+        </p>
+        <p class="link-row">
+          <a :href="personalSite" target="_blank" rel="noreferrer">Vasileios Sevetlidis</a>
+          <a :href="codeRepo" target="_blank" rel="noreferrer">Reproducibility code</a>
+          <a :href="paperPdf" target="_blank" rel="noreferrer">Paper PDF</a>
         </p>
       </section>
 

@@ -365,6 +365,23 @@ figcaption {
   font-size: 1rem;
 }
 
+.link-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+
+.link-row a {
+  color: #126d5c;
+  font-weight: 720;
+  text-decoration: none;
+}
+
+.link-row a:hover {
+  text-decoration: underline;
+}
+
 .figure-gallery {
   max-width: 900px;
 }
