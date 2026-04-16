@@ -3,6 +3,7 @@ import { computed, ref } from 'vue'
 
 const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 const paperPdf = asset('gauge-invariant-representation-holonomy.pdf')
+const codeRepo = 'https://github.com/vasiseve/gauge-invariant-representation-holonomy-code'
 
 const activeResult = ref('radius')
 
@@ -156,6 +157,7 @@ const faqs = [
         <p class="affiliation">Athena Research Center, Kimmeria Campus, Xanthi, Greece</p>
         <div class="actions" aria-label="Primary links">
           <a class="button primary" :href="paperPdf" target="_blank" rel="noreferrer">Read the PDF</a>
+          <a class="button" :href="codeRepo" target="_blank" rel="noreferrer">Code</a>
           <a class="button" href="#estimator">See the estimator</a>
         </div>
       </header>
